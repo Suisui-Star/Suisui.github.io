@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美好教育龙行天下</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: #F5F5F5;
+    }
+    .top {
+        width: 2300px;
+        height: 250px;
+        background-image: url(image/实训楼白幕.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: auto;
+    }
+
+    .top .logo img {
+        width: 800px;
+        height: 250px;
+    }
+
+    .top .sou a img {
+        width: 50px;
+        margin: auto;
+        position: relative;
+        top: -215px;
+        left: 676px;
+        background-color: aqua;
+        z-index: 10000;
+    }
+
+
+    .input form input {
+        width: 300px;
+        height: 50px;
+        border: 0px solid rgb(231, 231, 231);
+        border-radius: 3px;
+        z-index: 1;
+        font-size: 17px;
+        color: rgb(101, 101, 101);
+        /* 去除点击时产生的黑色描边 */
+        outline: none;
+        /* 输入的元素缩进20个像素 */
+        text-indent: 20px;
+    }
+
+    .input p a {
+        text-decoration: none;
+        color: rgb(17, 17, 93);
+    }
+
+    .input p {
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+        margin-bottom: 10px;
+    }
+
+    .input form {
+        height: 60px;
+        display: flex;
+    }
+
+    .left_1 .left .li1 a {
+        text-decoration: none;
+        color: aliceblue;
+    }
+
+    .left_1 .left {
+        width: 0;
+        height: 0;
+        display: inline;
+        align-items: center;
+    }
+
+    .left_1 {
+        width: 2300px;
+        height: 70px;
+        background-color: rgb(21 21 114);
+        margin: auto;
+    }
+
+    .left_1 .left ul li a {
+        text-decoration: none;
+        color: rgb(17, 17, 93);
+        position: relative;
+        top: -240px;
+        left: -20px;
+        display: none;
+
+        width: 100px;
+        height: 30px;
+        padding: 20px;
+        line-height: 30px;
+        font-size: 20px;
+        background-color: rgba(255, 255, 255, 0.5);
+        position: relative;
+        top: 20px;
+        text-align: center;
+    }
+
+    .left_1 .left ul:hover li a {
+        display: block;
+        z-index: 1000;
+    }
+
+    .left_1 .left ul {
+        width: 100px;
+        height: 30px;
+        padding: 20px;
+        line-height: 30px;
+        font-size: 20px;
+        background-color: rgb(21 21 114);
+        text-align: center;
+        list-style: none;
+    }
+
+    .left_1 .left .li1 {
+        position: relative;
+        left: -560px;
+        color: aliceblue;
+    }
+
+    .left_1 .left .li2 {
+        position: relative;
+        left: -420px;
+        top: -70px;
+        color: aliceblue;
+    }
+
+    .left_1 .left .li4 {
+        background-color: rgb(45, 70, 160);
+        position: relative;
+        left: -280px;
+        top: -140px;
+        color: aliceblue;
+    }
+
+    .left_1 .left .li5 {
+        position: relative;
+        left: -140px;
+        top: -210px;
+        color: aliceblue;
+    }
+
+    .left_1 .left .li6 {
+        position: relative;
+        top: -280px;
+        color: aliceblue;
+    }
+
+    .left_1 .left .li7 {
+        position: relative;
+        left: 140px;
+        top: -350px;
+        color: aliceblue;
+    }
+
+    .left_1 .left .li8 {
+        position: relative;
+        left: 280px;
+        top: -420px;
+        color: aliceblue;
+    }
+
+    .left_1 .left .li9 {
+        position: relative;
+        left: 420px;
+        top: -490px;
+        color: aliceblue;
+    }
+
+    .left_1 .left .li10 {
+        position: relative;
+        left: 560px;
+        top: -560px;
+        color: aliceblue;
+    }
+
+    .left_1 .left ul li a:hover {
+        color: rgb(45, 70, 160);
+    }
+
+    .left_1 .left ul:hover {
+        background-color: rgb(45, 70, 160);
+    }
+
+    /* 轮播图 */
+    .image {
+        width: 2300px;
+        height: 550px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .image img {
+        width: 100%;
+        height: 550px;
+    }
+    /* .image ul {
+        width: 9200px;
+        animation: changeImg 10s linear infinite;
+    }
+    .image ul li{
+        float: left;
+        list-style: none; 
+    }
+    .image ul li img {
+        width: 2300px;
+        height: 800px;
+    } */
+    @keyframes changeImg {
+        0% {transform: translateX(0)}
+        30% {transform: translateX(0)}
+        33% {transform: translateX(-2300px)}
+        63% {transform: translateX(-2300px)}
+        65% {transform: translateX(-4600px)}
+        98% {transform: translateX(-4600px)}
+        100% {transform: translateX(-6900px)}
+    }
+
+
+
+
+
+
+
+
+    /* 文章内容 */
+    .sector{
+        width: 1600px;
+        height: 3000px;
+        margin: auto;
+    }
+    .sector ul{
+        width: 270px;
+        height: 600px;
+        list-style: none;
+        background-color: #fdfcfc;
+        box-shadow: 0px 1px 9px 3px #e3e3e3;
+    }
+    .sector ul li{
+        text-decoration: none;
+        color: rgb(17, 17, 93);
+        margin: auto;
+        text-align: center;
+        line-height: 100px;
+        border-bottom: 1px dotted rgb(45, 70, 160);
+    }
+    .sector ul li a{
+        text-decoration: none;
+        color: rgb(17, 17, 93);
+    }
+    .sector ul li:nth-of-type(1){
+        background-color: rgb(45, 70, 160);
+    }
+    .sector ul .a{
+        width: 270px;
+        height: 100px;
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        position: relative;
+        bottom: 102px;
+    }
+    .sector ul .li1{
+        width: 270px;
+        height: 90px;
+        font-size: 20px;
+        line-height: 90px;
+        position: relative;
+        bottom: 102px;
+    }
+    .sector ul li a .p{
+        color: rgb(53, 81, 183);
+    }
+    .sector ul li:nth-of-type(2){
+        background-color: #fdfcfc;
+    }
+    .sector ul li:nth-of-type(3){
+        background-color: #fdfcfc;
+    }
+    .sector ul li:nth-of-type(4){
+        background-color: #fdfcfc;
+    }
+    .sector ul li:nth-of-type(5){
+        background-color: #fdfcfc;
+    }
+    .sector ul .li1:hover a{
+        color: rgb(53, 81, 183);  
+    }
+    .sector ul .li1:hover{
+        background-color: #f3f3f3;  
+    }
+    .sector .d{
+        width: 1280px;
+        height: 3000px;
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        left: 320px;
+        bottom: 600px;
+    }
+    /* 文章 */
+    .sector .d .div p {
+        font-size: 23px;
+        text-indent: 4ch;
+        line-height: 40px;
+        font-family: '宋体';
+        letter-spacing: 1px;
+    }
+    .sector .d .div {
+        width: 1200px;
+        height: 2870px;
+        margin: auto;
+        position: relative;
+        top: 100px;
+    }
+    .sector .d .div h2 {
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    /* 所在位置 */
+    .sector .d .di {
+        width: 1200px;
+        height: 70px;
+        margin: auto;
+        border-bottom: 1px solid rgb(45, 70, 160);
+        position: relative;
+        top: 10px;
+    }
+    .sector .d .di p{
+        font-family: '黑体';
+        text-align: right;
+        line-height: 70px;
+        color: #3f3f3f;
+        position: relative;
+        bottom: 75px;
+        font-size: 17px;
+    }
+    .sector .d .di img{
+        height: 70px;
+    }
+    .sector .d .di p a{
+        text-decoration: none;
+        color: #3f3f3f;
+        
+    }
+
+    
+
+
+
+
+
+    .bottom {
+        width: 2300px;
+        height: 230px;
+        background-image: url(image/底部.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        top: 150px;
+        margin: auto;
+    }
+
+    .bottom .hr {
+        /* 最底下的下划线 */
+        width: 90%;
+        height: 2px;
+        border-bottom: 0.5px solid aliceblue;
+        margin: auto;
+        position: relative;
+        top: 175px;
+    }
+
+    .bottom .ul p {
+        display: inline-block;
+        color: aliceblue;
+        letter-spacing: 2px;
+        position: relative;
+        top: -40px;
+    }
+
+    .bottom .ul p img {
+        /* 图标 */
+        width: 20px;
+        height: 20px;
+        position: relative;
+        top: 5px;
+        right: 5px;
+        padding: 2px;
+    }
+
+    .bottom .ul p a {
+        /* 去除超链接下划线并且更改颜色 */
+        text-decoration: none;
+        color: aliceblue;
+    }
+
+    .bottom p img {
+        position: relative;
+        width: 800px;
+    }
+
+    .bottom .ul p a:hover {
+        color: rgb(142, 164, 243);
+    }
+
+    .bottom .p {
+        width: 300px;
+        height: 10px;
+        margin: auto;
+    }
+
+    .bottom .p p {
+        color: aliceblue;
+        position: relative;
+        top: -10px;
+        font-size: 11px;
+    }
+</style>
+<body>
+    <!-- 顶上图片 -->
+    <div class="top">
+        <div class="logo">
+            <img src="image/logo3.png" alt="">
+        </div>
+        <div class="input">
+            <p><a href="#">院长信箱</a>&nbsp;&nbsp;&nbsp;&nbsp;<b>/</b>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#">师德师风投诉举报信箱</a>&nbsp;&nbsp;&nbsp;&nbsp;<b>/</b>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="登入框.html">在线投稿</a>
+            </p>
+            <form action="学校简介.html" method="get">
+                <input type="search" name="q">
+                <a href=""><img src="image/搜索.png" alt="" width="50px" style="background-color: aqua;"></a>
+            </form>
+        </div>
+        <!-- <div class="sou" align="center">
+        </div> -->
+    </div>
+    <!-- 点击按钮 -->
+    <div class="left_1">
+        <div class="left" align="center">
+            <ul class="li1">
+                <a href="index.html" class="a">首页</a>
+            </ul>
+            <ul class="li2">
+                <li class=".a">校情总览</li>
+                <li class=".li3"><a href="学校简介.html">学校简介</a></li>
+                <li class=".li3"><a href="#">学校领导</a></li>
+                <li class=".li3"><a href="#">历史沿革</a></li>
+                <li class=".li3"><a href="#">办学理念</a></li>
+            </ul>
+            <ul class="li4">
+                <li class=".a">校园生活</li>
+                <li class=".li3"><a href="图书馆.html">图书馆</a></li>
+                <li class=".li3"><a href="#">体育运动</a></li>
+                <li class=".li3"><a href="#">最美瞬间</a></li>
+                <li class=".li3"><a href="校园风景.html">校园风景</a></li>
+            </ul>
+            <ul class="li5">
+                <li class=".a">专业设置</li>
+                <li class=".li3"><a href="#">电子商务</a></li>
+                <li class=".li3"><a href="#">农产品加工</a></li>
+                <li class=".li3"><a href="#">大数据技术</a></li>
+                <li class=".li3"><a href="#">智能物流</a></li>
+                <li class=".li3"><a href="#">计算机网络</a></li>
+            </ul>
+            <ul class="li6">
+                <li class=".a">党建思政</li>
+            </ul>
+            <ul class="li7">
+                <li class=".a">科学研究</li>
+                <li class=".li3"><a href="实训楼.html">实训楼</a></li>
+                <li class=".li3"><a href="#">科研成果</a></li>
+                <li class=".li3"><a href="#">学术刊登</a></li>
+                <li class=".li3"><a href="#">管理部门</a></li>
+            </ul>
+            <ul class="li8">
+                <li class=".a">招生就业</li>
+                <li class=".li3"><a href="#">合作企业</a></li>
+                <li class=".li3"><a href="#">招生人数</a></li>
+            </ul>
+            <ul class="li9">
+                <li class=".a">院系设置</li>
+                <li class=".li3"><a href="#">信息系</a></li>
+                <li class=".li3"><a href="#">农贸系</a></li>
+                <li class=".li3"><a href="#">教育系</a></li>
+            </ul>
+            <ul class="li10">
+                <li class=".a">联系我们</li>
+                <li class=".li3"><a href="#">校长办</a></li>
+                <li class=".li3"><a href="#">招生办</a></li>
+        </div>
+    </div>
+    <!-- 轮播图 -->
+    <div class="image">
+        <img src="image/轮播图/彩虹1.jpg" alt=""></li>
+    </div>
+    <!-- 内容 -->
+    <div class="sector">
+        <ul>
+            <li class="a">校园生活</li>
+            <li class="li1"><a href="#"><p class="p">——&nbsp;&nbsp;图书馆&nbsp;&nbsp;——</p></a></li>
+            <li class="li1"><a href="#"><p>体育运动</p></a></li>
+            <li class="li1"><a href="#"><p>最美瞬间</p></a></li>
+            <li class="li1"><a href="校园风景.html"><p>校园风景</p></a></li>
+        </ul>
+        <div class="d">
+            <div class="di">
+                <img src="image/logo3.png" alt="">
+                <p>所在位置：<a href="index.html">首页</a>——<a href="学校简介.html">校园生活</a>——<a href="学校简介.html">图书馆</a></p>
+            </div>
+            <div class="div">
+                <h2>图书馆简介</h2><br><br>
+                <p>
+                    我校图书馆建筑面积3225. 04平方米，分上下两层，是全体师生学习阅读的开放空间，配有完备的现代化设备，拥有丰富的纸质藏书资源，涵盖思政类、社会科学总论、经济类、工业技术类等图书共8.5万余册，设有5个阅览室，共有阅览座位300余个。
+                </p><br>
+                <div class="img" style="width: 510px; height: 350px; position: relative; left: 50px; top: 50px;">
+                    <img src="image/图书馆/图书自助借还机.jpg" alt="图书自助借还机" width="510px" height="350px" >
+                </div>
+                <div class="r1" style="width: 580px; height: 350px; position: relative; left: 600px; bottom: 300px;">
+                    <p class="MsoNormal" element-id="w9msg6uj">
+                        <b style="font-style: unset">
+                            <span style="font-family: 宋体">1.图书自助借还机：</span></b></p>
+                    <p>全馆采用是的一站式自助借还，借阅便利。自助借还机分布在1楼和3楼。</p>
+                </div>
+                <!--分割线-->
+                <div class="img" style="width: 510px; height: 350px; position: relative; left: 50px; bottom: 200px;">
+                    <img src="image/图书馆/休闲式电子阅览室.jpg" alt="休闲式电子阅览室" width="510px" height="350px">
+                </div>
+                <div  class="r1" style="width: 580px; height: 350px; position: relative; left: 600px; bottom: 550px;">
+                    <p class="MsoNormal" element-id="w9msg6uj">
+                        <b style="font-style: unset">
+                            <span style="font-family: 宋体">2.休闲式电子阅览室：</span></b></p>
+                    <p>
+                        位于图书馆1楼东区，内有电子书阅览平板和纸质书籍供学生借阅。
+                        室内有组合沙发，休闲桌椅、落地窗，整体装修风格温馨、清新。冬夏皆有空调，窗帘为电动式窗帘，环境舒适。
+                    </p>
+                </div>
+                <!--分割线-->
+                <div class="img" style="width: 510px; height: 350px; position: relative; left: 50px; bottom: 440px;">
+                    <img src="image/图书馆/瀑布流电子借阅系统.jpg" alt="瀑布流电子借阅系统" width="510px" height="350px">
+                </div>
+                <div  class="r1" style="width: 580px; height: 350px; position: relative; left: 600px; bottom: 790px;">
+                    <p class="MsoNormal" element-id="w9msg6uj">
+                        <b style="font-style: unset">
+                            <span style="font-family: 宋体">3.瀑布流电子借阅系统：</span></b></p>
+                    <p>
+                        位于图书馆西区正大门柱子上，柱子上是瀑布流系统借阅屏，各种电子图书以瀑布流的形式从顶端向下飘落，触碰图书封面，即可打开图书详情页，通过扫描二维码的方式借阅该书。
+                   </p>
+                </div>
+               <!--分割线-->
+               <div class="img" style="width: 510px; height: 350px; position: relative; left: 50px; bottom: 680px;" >
+                    <img src="image/图书馆/朗读亭.png" alt="朗读亭" width="510px" height="350px"> 
+               </div>
+               <div  class="r1" style="width: 580px; height: 350px; position: relative; left: 600px; bottom: 1030px;">
+                <p class="MsoNormal" element-id="w9msg6uj">
+                    <b style="font-style: unset">
+                        <span style="font-family: 宋体">4.朗读亭：</span></b></p>
+                    <p>
+                        位于图书馆1楼西区正大门右侧，是一个独立的、隔音的发声空间，内置朗读软件和专业录音设备。
+                        朗读亭融合朗读练习、英语学习、录制、演讲训练、悦读、线上分享等丰富功能，可满足用户享受朗读、快乐阅读和社交分享的个性需求。
+                    </p>
+               </div>
+                <!--分割线-->
+                <div class="img" style="width: 510px; height: 350px; position: relative; left: 50px; bottom: 915px;">
+                    <img src="image/图书馆/杂志阅览室.jpg" alt="杂志阅览室" width="510px" height="350px" >
+                </div>
+                <div class="r1" style="width: 580px; height: 350px; position: relative; left: 600px; bottom: 1265px;">
+                    <p class="MsoNormal" element-id="w9msg6uj">
+                        <b style="font-style: unset">
+                            <span style="font-family: 宋体">5.杂志阅览室：</span></b></p>
+                    <p>
+                        位于图书馆2楼，杂志阅览分为纸质阅览和电子阅览两种，电子阅览需要用手机扫描杂志封面二微码，即可进入阅览模式。
+                    </p>
+                </div>
+                 <!--分割线-->
+                 <p style="position: relative; bottom: 1200px;">非常欢迎大家来图书馆阅览书籍，为了共同维护好学校图书馆的美丽阅读环境，我们向大家发起如下倡议：</p>
+                 <p style="position: relative; bottom: 1200px;">1、请同学们在阅览之后将借阅的书籍放回原来所在的位置，具体位置查看书脊下方的标签，如有疑问可咨询图书馆的工作人员。</p>
+                 <p style="position: relative; bottom: 1200px;">2、图书馆内为大家共同阅览之所，为人为己，请保持安静，若有需求，请佩戴好耳机。</p>
+                 <p style="position: relative; bottom: 1200px;">3、馆内卫生牵系大家，请勿将食物带入图书馆内。</p>
+                 <p style="position: relative; bottom: 1200px;">4、馆内座椅用完走前推回原位。</p>
+                 <p style="position: relative; bottom: 1200px;">最后，祝大家在知识的海洋尽情畅游，图书馆欢迎你的光临！</p>
+            </div>
+        </div>
+    </div>
+    <!-- 美好教育龙行天下 -->
+    <div class="bottom">
+        <div class="hr"></div>
+        <p align="center"><img src="image/美好教育龙行天下(白色).png" alt=""></p>
+        <div class="ul" align="center">
+            <p><img src="image/联系电话.png" alt="">联系电话:123456789</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p><img src="image/地址.png" alt="">学校地址:江西省赣州市安远县产城新区重石大道南侧</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p><img src="image/邮箱.png" alt="">电子邮箱:123456@outlook.com</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p><img src="image/意见反馈.png" alt=""><a href="#">意见反馈</a></p>
+        </div>
+        <div class="p">
+            <p>版权所有&nbsp;&nbsp;&copy;&nbsp;&nbsp;2024&nbsp;&nbsp;ABC&nbsp;&nbsp;Company.&nbsp;&nbsp;All&nbsp;&nbsp;Rights&nbsp;&nbsp;Reserved.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
